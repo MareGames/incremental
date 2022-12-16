@@ -1,13 +1,17 @@
+<style>
+  @import './css/style.css';
+</style>
+
 <template>
   <div class="snowpity-container">
     <div class="earthpity">
-      You have {{player.snowpity}} Snowpities!
+      You have {{player.earthpity}} Snowpities produced by earthmares!
     </div>
     <div class="pegapity">
-
+      You have {{player.pegapity}} Snowpities produced by earthmares!
     </div>
     <div class="unipity">
-
+      You have {{player.unipity}} Snowpities produced by earthmares!
     </div>
   </div>
   <div class="mares-container">

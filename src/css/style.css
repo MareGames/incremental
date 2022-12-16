@@ -1,0 +1,21 @@
+
+* {
+    box-sizing: border-box;
+}
+
+#app {
+    width: 950px;
+    margin: auto;
+}
+
+.snowpity-container, .mares-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.earthpity, .pegapity, .unipity {
+    width: 300px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 40px;
+}
