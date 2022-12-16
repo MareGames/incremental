@@ -20,7 +20,8 @@ jobs:
       run: npm install -g @vue/cli-service && npm i vue-template-compiler --save-dev
     - name: Build app
       run: npm run build
-    - name: Setup Github
-      run:  git config --global user.email "crayvian@pm.me" && git config --global user.name "Crayvian"
     - name: Deploy to GitHub Pages
-      run: npm run deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist
