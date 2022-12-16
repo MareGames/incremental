@@ -1,24 +1,41 @@
 <template>
   <div class="snowpity-container">
+    <div class="earthpity">
+      You have {{player.snowpity}} Snowpities!
+    </div>
+    <div class="pegapity">
 
+    </div>
+    <div class="unipity">
+
+    </div>
   </div>
   <div class="mares-container">
-    
+    <div class="earthmares">
+      <div class="mare earthmare" v-for="earthmares in player.earthmares" :key="earthmares">
+        {{earthmares.cost}}
+      </div>
+    </div>
+    <div class="pegamares">
+
+    </div>
+    <div class="unimares">
+
+    </div>
   </div>
 </template>
 
 <script>
-import PlayerData from './components/Player.vue'
-//import HelloWorld from './components/HelloWorld.vue'
+
+import player from '@/js/player.js'
+
 export default {
   name: 'App',
-  //omponents: {
-  //  HelloWorld
-  //}
   data() {
     return {
-      Player: PlayerData
+      player: player
     }
   }
 }
+
 </script>

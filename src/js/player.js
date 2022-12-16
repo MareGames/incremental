@@ -1,10 +1,5 @@
-<script>
-export default {
-  name: 'PlayerData',
-}
-
 var player = {
-    snowpity: 10,
+    snowpity: 50,
     earthpity: 0,
     pegapity: 0,
     unipity: 0,
@@ -21,4 +16,5 @@ var firstEarthmare = {
 }
 
 player.earthmares.push(firstEarthmare)
-</script>
+
+export default player
